@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="todo logo.png" alt="logo" style="width:50px;height:50px;" class="logo" radius: 2px>
+            <div class="nav">
+                <ul>
+                    <li id="markAllComplete"> <b> Mark All Complete</b></li>
+                    <li id="deleteAll"><b>Delete All</b></li>
+                </ul>
+            </div>
+        </header>
+        <form onsubmit="return false">
+            <div class="input-container">
+                <input id="todoDiscriptionInputField" type="text" placeholder="Type here..">
+            </div>
+            <div class="wrapper">
+                <button id="addTaskButton"><strong>ADD </strong></button>
+            </div>
+        </form>
+        <ul id="taskListWrapper" data-type="todoListWrapper">
+        </ul>
+    </div>
+    <link rel="stylesheet" type="text/css" href="todo.css">
+    <script src="dist/bundle.js"></script>
+</body>
+
+</html>
