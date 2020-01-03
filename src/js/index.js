@@ -1,4 +1,5 @@
 
-import controller from "./Controller";
+import { TodoController } from "./todoController";
 
-controller.init();
+const todoController = new TodoController;
+todoController.init();
